@@ -42,8 +42,8 @@ func extractLink(n *html.Node) Link {
 	return ret
 }
 
-func ExtractLinks(r *io.Reader) []Link {
-	doc, err := html.Parse(*r)
+func ExtractLinks(r io.Reader) []Link {
+	doc, err := html.Parse(r)
 	if err != nil {
 		log.Fatal(err)
 	}
