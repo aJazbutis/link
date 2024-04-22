@@ -3,7 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"link"
+	"github.com/aJazbutis/link/students/ajazbutis/link"
+//	"link"
 )
 
 func main() {

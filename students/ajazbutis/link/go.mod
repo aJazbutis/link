@@ -1,4 +1,4 @@
-module link
+module github.com/aJazbutis/link/students/ajazbutis/link
 
 go 1.22.2
 
