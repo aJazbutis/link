@@ -1,6 +1,7 @@
 package link
 
 import (
+	"encoding/xml"
 	"golang.org/x/net/html"
 	"log"
 	"os"
@@ -8,8 +9,9 @@ import (
 )
 
 type Link struct {
-	Href string
-	Text string
+	XMLName xml.Name `xml:"url"`
+	Href    string   `xml:"loc"`
+	Text    string
 }
 
 func extractText(n *html.Node, b *strings.Builder) {
