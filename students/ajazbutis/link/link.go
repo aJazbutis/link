@@ -4,7 +4,6 @@ import (
 	"encoding/xml"
 	"golang.org/x/net/html"
 	"log"
-	"os"
 	"strings"
 	"io"
 )
