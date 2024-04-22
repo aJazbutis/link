@@ -1,0 +1,4 @@
+github.com/aJazbutis/link v0.0.0-20240422145308-397b59113f3d h1:rmJifh+JIBqa5j0pJIu0Y9xWPVLR9oyICcvrb2kH0Zs=
+github.com/aJazbutis/link v0.0.0-20240422145308-397b59113f3d/go.mod h1:k7l7xrB5JL3BJYRdKgeU/yOJCgvHd3n/tWxWSJ/rGj8=
+golang.org/x/net v0.24.0 h1:1PcaxkF854Fu3+lvBIx5SYn9wRlBzzcnHZSiaFFAb0w=
+golang.org/x/net v0.24.0/go.mod h1:2Q7sJY5mzlzWjKtYUEXSlBWCdyaioyXzRB2RtU8KVE8=

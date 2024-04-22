@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"strings"
+	"io"
 )
 
 type Link struct {
@@ -42,12 +43,8 @@ func extractLink(n *html.Node) Link {
 	return ret
 }
 
-func ExtractLinks(path *string) []Link {
-	file, err := os.Open(*path)
-	if err != nil {
-		log.Fatal(err)
-	}
-	doc, err := html.Parse(file)
+func ExtractLinks(r *io.Reader) []Link {
+	doc, err := html.Parse(*r)
 	if err != nil {
 		log.Fatal(err)
 	}
