@@ -3,15 +3,15 @@ package link
 import (
 	"encoding/xml"
 	"golang.org/x/net/html"
+	"io"
 	"log"
 	"strings"
-	"io"
 )
 
 type Link struct {
 	XMLName xml.Name `xml:"url"`
 	Href    string   `xml:"loc"`
-	Text    string
+	Text    string   `xml:"-"`
 }
 
 func extractText(n *html.Node, b *strings.Builder) {

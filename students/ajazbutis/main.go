@@ -3,9 +3,11 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/aJazbutis/link/students/ajazbutis/link"
+	"io"
 	"log"
 	"os"
+
+	"github.com/aJazbutis/link/students/ajazbutis/link"
 )
 
 func main() {
@@ -18,7 +20,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	links := link.ExtractLinks(file)
+	links := link.ExtractLinks(io.Reader(file))
 	for _, link := range links {
 		fmt.Printf("%+v\n", link)
 	}
